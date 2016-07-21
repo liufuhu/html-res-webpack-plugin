@@ -190,6 +190,7 @@ HtmlResWebpackPlugin.prototype.injectAssets = function(compilation) {
     				      + '<link rel="icon" type="image/x-icon" href="' + publicPath + this.options.faviconFileName + '">\n'
 	}
 
+	scriptContent = scriptContent.replace(/`\$`/g, ' ')
 	htmlContent = htmlContent.replace("</head>", faviconContent + "</head>").replace("</head>", styleContent + "</head>").replace("</body>", scriptContent + "</body>");
 	
 	let htmlAssetObj = compilation.assets[this.options.htmlFileName];
