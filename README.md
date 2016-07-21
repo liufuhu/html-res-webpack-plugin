@@ -1,14 +1,18 @@
 # html-res-webpack-plugin
 
 从[lcxfs1991/html-res-webpack-plugin](https://github.com/lcxfs1991/html-res-webpack-plugin)fork过来。
+
 工程里使用到了[ampedandwired/html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin)和html-webpack-plugin，但是两者的option中filename不同：
+
 ```
     // html-res-webpack-plugin
     var basename = path.basename(filename);
 
     // html-webpack-plugin
     his.options.filename = path.relative(compiler.options.output.path, filename);
+
 ```
+为了兼容，特自己创建一个仓库。
 
 
 ### [中文文档](https://github.com/lcxfs1991/html-res-webpack-plugin/blob/master/README_ZH.md)

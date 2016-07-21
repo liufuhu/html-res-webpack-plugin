@@ -1,5 +1,5 @@
 {
-  "name": "html-res-webpack-plugin",
+  "name": "html-js-css-webpack-plugin",
   "version": "1.0.1",
   "description": "html generation and resource inline or md5 for webpack",
   "keywords": [
@@ -9,15 +9,15 @@
     "plugin",
     "building tool"
   ],
-  "homepage": "https://github.com/lcxfs1991/html-res-webpack-plugin",
+  "homepage": "https://github.com/liufuhu/html-res-webpack-plugin",
   "bugs": {
-    "url": "https://github.com/lcxfs1991/html-res-webpack-plugin/issues"
+    "url": "https://github.com/liufuhu/html-res-webpack-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:lcxfs1991/html-res-webpack-plugin.git"
+    "url": "git+ssh://git@github.com/liufuhu/html-res-webpack-plugin.git"
   },
-  "author": "heyli",
+  "author": "liufuhu",
   "files": [
     "bin",
     "libs",
@@ -54,5 +54,6 @@
   "engines": {
     "node": ">=4.0.0",
     "npm": ">=3.0.0"
-  }
+  },
+  "main": "index.js"
 }
