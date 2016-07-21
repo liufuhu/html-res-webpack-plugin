@@ -239,7 +239,7 @@ HtmlResWebpackPlugin.prototype.inlineRes = function(compilation, chunk, file, fi
 HtmlResWebpackPlugin.prototype.addFileToWebpackAsset = function(compilation, template, isToStr) {
 	var filename = path.resolve(template);
 	// var basename = path.basename(filename);
-	var basename = path.relative(compilation.options.output.path, filename);
+	var basename = path.relative(compilation.options.output.path, this.options.filename);
 	
     compilation.fileDependencies.push(filename);
     compilation.assets[basename] = {
